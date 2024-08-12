@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         // change background color
+         document.body.style.backgroundColor = 'lightyellow';
+
+// main container
+let container = document.createElement('div');
+container.style.padding = '50px';
+
+container.style.border = '3px dashed black';
+container.style.minHeight = '100vh';
+container.style.maxWidth = '80%';
+container.style.margin = 'auto';
+
+container.style.borderRadius = '40px'
+
+// Create an element with createElemenet()
+let div1 = document.createElement('div');
+
+// Style element with .style.property = value
+div1.style.padding = '10px';
+div1.style.textAlign = 'center';
+
+let h11 = document.createElement('h1');
+h11.innerHTML = "Hatishwar Singh";
+
+let p1 = document.createElement('p');
+p1.innerHTML = "Jammu, J&K (UT) <br> +91-9622116769, 7780944262 | hatishrandhwal0907@mail.com";
+
+// add created element to parent element if any
+div1.appendChild(h11);
+div1.appendChild(p1);
+
+// add element to body
+container.appendChild(div1);
+
+let hr1 = document.createElement('hr');
+container.appendChild(hr1);
+
+let h12 = document.createElement('h3');
+h12.innerHTML = "CAREER SUMMARY";
+let p2 = document.createElement('p');
+p2.innerHTML = "Dedicated and versatile professional with a robust educational foundation in civil engineering, including a Higher Secondary in non-medical + computer, Transitioned to web development, driven by a profund passion for creating and building websites from scratch . This unique combination of enginerring precision and development skills positions me as an exceptional candidate for web development roles. My diverse background enables me to approach problems with a broad perspective, ensuring innovative and efficent solutions. Eager to leverage my wide-ranging expertise to contribute effectively to dynamic development teams."
+
+
+let div2 = document.createElement('div');
+div2.appendChild(h12);
+div2.appendChild(p2);
+
+container.appendChild(div2);
+
+
+
+let hr2 = document.createElement('hr');
+container.appendChild(hr2);
+
+
+//Skills section
+let table1 = document.createElement('table');
+let tr1 = document.createElement('tr');
+let tr1td1 = document.createElement('td');
+let tr1td2 = document.createElement('td');
+let tr2 = document.createElement('tr');
+let tr2td1 = document.createElement('td');
+let tr2td2 = document.createElement('td');
+
+tr1.appendChild(tr1td1);
+tr1.appendChild(tr1td2);
+table1.appendChild(tr1);
+
+tr2.appendChild(tr2td1);
+tr2.appendChild(tr2td2);
+table1.appendChild(tr2);
+
+
+let hardskills = document.createElement('ul');
+let hsli1 = document.createElement('li');
+hsli1.innerHTML = 'HTML';
+let hsli2 = document.createElement('li');
+hsli2.innerHTML = 'CSS';
+let hsli3 = document.createElement('li');
+hsli3.innerHTML = 'JavaScript';
+let hsli4 = document.createElement('li');
+hsli4.innerHTML = 'Bootstrap';
+let hsli5 = document.createElement('li');
+hsli5.innerHTML = 'MERN Stack';
+
+hardskills.appendChild(hsli1);
+hardskills.appendChild(hsli2);
+hardskills.appendChild(hsli3);
+hardskills.appendChild(hsli4);
+hardskills.appendChild(hsli5);
+
+
+let hardskill_head = document.createElement('h3');
+hardskill_head.innerHTML = 'Hard Skills';
+tr1td1.appendChild(hardskill_head);
+
+tr2td1.appendChild(hardskills)
+
+let softskills = document.createElement('ul');
+let ssli1 = document.createElement('li');
+ssli1.innerHTML = 'Communication';
+let ssli2 = document.createElement('li');
+ssli2.innerHTML = 'Team Player';
+let ssli3 = document.createElement('li');
+ssli3.innerHTML = 'Self Learner';
+let ssli4 = document.createElement('li');
+ssli4.innerHTML = 'Creativity';
+let ssli5 = document.createElement('li');
+ssli5.innerHTML = 'Management';
+
+softskills.appendChild(ssli1);
+softskills.appendChild(ssli2);
+softskills.appendChild(ssli3);
+softskills.appendChild(ssli4);
+softskills.appendChild(ssli5);
+
+let softskill_head = document.createElement('h3');
+softskill_head.innerHTML = 'Soft Skills';
+tr1td2.appendChild(softskill_head);
+tr2td2.appendChild(softskills);
+
+// table1.style.border = '2px solid gray';
+// table1.style.padding = '10px';
+// tr1td1.style.borderRight = '2px solid gray';
+
+// table1.setAttribute('border','1px')
+
+// tr1td1.style.padding = '5%';
+table1.style.minWidth = '100%'
+
+container.appendChild(table1);
+
+// projects section
+let h14 = document.createElement('h3');
+h14.innerHTML = "PROJECTS";
+
+// project 1 start
+let h41 = document.createElement('h4');
+h41.innerHTML = 'CALCULATOR'
+h41.style.textDecoration = 'underline';
+
+let list1 = document.createElement('ul');
+let list1_li1 = document.createElement('li');
+list1_li1.innerHTML = 'Designed a responsive and infultive user interface using HTML and CSS.';
+list1.appendChild(list1_li1);
+
+let list1_li2 = document.createElement('li');
+list1_li2.innerHTML = 'Implemented core arithmetic functionalites using JavaScript, allowing users to perform calculations with real-time results.';
+list1.appendChild(list1_li2);
+
+let list1_li3 = document.createElement('li');
+list1_li3.innerHTML = 'Incorporated input validation and error handling to manage invalid inputs and prevent calculation errors.';
+list1.appendChild(list1_li3);
+
+let div4 = document.createElement('div');
+div4.appendChild(h14);
+div4.appendChild(h41);
+div4.appendChild(list1);
+
+container.appendChild(div4);
+
+let hr4 = document.createElement('hr');
+container.appendChild(hr4);
+
+
+let h15 = document.createElement('h3');
+h15.innerHTML = "ABOUT ME";
+let p5 = document.createElement('p');
+p5.innerHTML = " Hello, I'm Hatishwar singh, a FULL STACK Developer. Quick learner and hardworking, I'm dedicated to delivering quality solutions efficiently.  "
+
+let div5 = document.createElement('div');
+div5.appendChild(h15);
+div5.appendChild(p5);
+
+container.appendChild(div5);
+
+let hr5 = document.createElement('hr');
+container.appendChild(hr5);
+
+// Languages
+let h16 = document.createElement('h3');
+h16.innerHTML = "LANGUAGE KNOWN";
+
+let list2 = document.createElement('ul');
+
+let list2_li1 = document.createElement('li');
+list2_li1.innerHTML = 'English';
+list2.appendChild(list2_li1);
+
+let list2_li2 = document.createElement('li');
+list2_li2.innerHTML = 'Hindi';
+list2.appendChild(list2_li2);
+
+let list2_li3 = document.createElement('li');
+list2_li3.innerHTML = 'Dogri';
+list2.appendChild(list2_li3);
+
+let list2_li4 = document.createElement('li');
+list2_li4.innerHTML = 'Punjabi';
+list2.appendChild(list2_li4);
+
+let div6 = document.createElement('div');
+div6.appendChild(h16);
+div6.appendChild(list2);
+
+
+container.appendChild(div6);
+
+let hr6 = document.createElement('hr');
+container.appendChild(hr6);
+
+
+
+
+let h17 = document.createElement('h3');
+h17.innerHTML = "DECLARATION";
+let p7 = document.createElement('p');
+p7.innerHTML = " I hereby declare that the above mentioned information correct upto my knowledge and I bear the respnsibility for the correctness of the above mentioned particulars. "
+
+let div7 = document.createElement('div');
+div7.appendChild(h17);
+div7.appendChild(p7);
+
+container.appendChild(div7);
+
+// let hr7 = document.createElement('hr');
+// container.appendChild(hr7);
+
+
+// date place name in last
+let table2 = document.createElement('table');
+
+table2.style.minWidth = '100%';
+
+let table2tr1 = document.createElement('tr');
+let table2tr1td1 = document.createElement('td');
+let table2tr1td2 = document.createElement('td');
+
+table2tr1td1.style.padding = '20px';
+table2tr1td2.style.padding = '20px';
+
+let table2tr2 = document.createElement('tr');
+let table2tr2td1 = document.createElement('td');
+let table2tr2td2 = document.createElement('td');
+
+table2tr2td1.style.padding = '20px';
+table2tr2td2.style.padding = '20px';
+table2tr2td2.style.textAlign = 'right';
+
+table2tr1td1.innerHTML = 'Date: ________________';
+table2tr2td1.innerHTML = 'Place: _______________';
+table2tr2td2.innerHTML = "Name: ____________________";
+
+table2tr1.appendChild(table2tr1td1);
+table2tr1.appendChild(table2tr1td2);
+table2tr2.appendChild(table2tr2td1);
+table2tr2.appendChild(table2tr2td2);
+
+table2.appendChild(table2tr1);
+table2.appendChild(table2tr2);
+
+container.appendChild(table2);
+
+//add container to body
+
+document.body.appendChild(container);
+
+
+
+
+
+</script>
+</body>
+</html>
